@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(zed_cpu_ros)
+project(zed_ros_driver)
 
 find_package(catkin REQUIRED
         COMPONENTS
@@ -33,12 +33,12 @@ catkin_package(
     CATKIN_DEPENDS
 )
 
-# add_library(zed_cpu_ros src/zed_cpu_ros.cpp)
-# target_link_libraries(zed_cpu_ros ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${Boost_LIBRARIES})
-# add_dependencies(zed_cpu_ros arti_msgs_gencpp)
+# add_library(zed_ros_driver src/zed_ros_driver.cpp)
+# target_link_libraries(zed_ros_driver ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${Boost_LIBRARIES})
+# add_dependencies(zed_ros_driver arti_msgs_gencpp)
 
-add_executable(zed_cpu_ros src/zed_cpu_ros.cpp)
-target_link_libraries(zed_cpu_ros ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBS})
+add_executable(zed_ros_driver src/zed_ros_driver.cpp)
+target_link_libraries(zed_ros_driver ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBS})
 
 # install(TARGETS 
 #        ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}

@@ -1,0 +1,2 @@
+source devel/setup.bash
+roslaunch zed_ros_driver zed_ros_driver.launch
