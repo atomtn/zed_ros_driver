@@ -10,9 +10,8 @@ A simple zed camera driver which only use opencv and ros.
 1. git the packge into your working space
 
     ```
-    cd catkin_ws/src
     git clone https://github.com/atomtn/zed_ros_driver.git
-    cd ..
+    cd zed_ros_driver-main
     catkin_make
     ```
 2. Get your calibration files:
@@ -53,7 +52,7 @@ A simple zed camera driver which only use opencv and ros.
 
 3. launch the code
     ```
-    roslaunch zed_ros_driver zed_ros_driver.launch
+   source start.sh
     ```
 ## Launch file parameters
 
